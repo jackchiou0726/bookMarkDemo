@@ -1,0 +1,66 @@
+h1 {
+  color: white;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: $border-radius;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 360px;
+  margin: 20px auto 10px;
+  user-select: none;
+  text-align: center;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+}
+
+div.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  div.item {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: $border-radius;
+    margin: 10px;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .fa-times {
+      float: right;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    div.name {
+      margin-top: 20px;
+      margin-right: 20px;
+      img {
+        height: 20px;
+        width: 20px;
+        vertical-align: sub;
+        margin-right: 5px;
+      }
+
+      a {
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        &:link,
+        &:visited {
+          color: white;
+          text-decoration: none;
+        }
+        &:hover,
+        &:active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
